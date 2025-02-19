@@ -34,4 +34,8 @@ function App() {
     </div>
   )
 }
+<<<<<<< HEAD
 export default App
+=======
+export default App
+>>>>>>> master

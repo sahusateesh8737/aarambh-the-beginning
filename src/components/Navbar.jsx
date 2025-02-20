@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
-
+import './Navbar.css'
+import LOGO from "../assets/images/logo.jpg"
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="./images/logo.jpg" alt="Logo" />
+        <img src={LOGO} alt="Logo" /> 
       </div>
       <div className="mobile-menu-icon" onClick={handleMobileMenuToggle}>
         &#9776;

@@ -1,9 +1,10 @@
 import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './components/Home'
-import About from './components/About'
-import Dashboard from './components/Dashboard'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar' // Add this import statement
+import Home from './components/Home' // Assuming you have a Home component
+import About from './components/About' // Assuming you have an About component
+import Dashboard from './components/Dashboard' // Assuming you have a Dashboard component
+
 const router = createBrowserRouter(
 [
   {path:"/",

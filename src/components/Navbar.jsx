@@ -18,9 +18,10 @@ const Navbar = () => {
         &#9776;
       </div>
       <ul className={`navbar-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/gallery">Gallery</Link></li>
+        <li ><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
         <li><Link to="/team">Team</Link></li>
+        <li><Link to="/event">Event</Link></li>
       </ul>
     </nav>
   );

@@ -1,0 +1,38 @@
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: 80vh;
+  background: linear-gradient(45deg, #19c39e, #2ece7b, #86e025, #e84848, #6af0ce, #339af0, #f44c87, #20c997, #d627e9, #94d82d, #fcc419, #ff922b);
+  background-size: 300% 300%;
+  animation: gradientBackground 10s ease infinite;
+}
+
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.home-content {
+  max-width: 50%;
+  color: white;
+}
+
+.home-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.home-logo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

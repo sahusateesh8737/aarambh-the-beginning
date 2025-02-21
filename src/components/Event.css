@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #000000;
 }
 
 .event-banner img {
@@ -17,6 +17,7 @@
 .event-details {
   text-align: center;
   max-width: 800px;
+  color: white;
 }
 
 .event-details h1 {

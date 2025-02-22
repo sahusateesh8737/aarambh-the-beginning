@@ -140,3 +140,16 @@
 .popup-link:hover {
   background-color: #0056b3;
 }
+
+.tagline {
+  color: rgb(224, 126, 6);
+  text-align: center;
+  font-family: 'Fantasy', sans-serif;
+  font-size: xx-large;
+  
+  padding: 10px 20px;
+
+
+ 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}

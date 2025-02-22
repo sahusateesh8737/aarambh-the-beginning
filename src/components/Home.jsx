@@ -53,6 +53,7 @@ const Home = () => {
       </div>
       <div className="home-logo" ref={homeLogoRef}>
         <img src={LOGO} alt="Organization Logo" />
+        <h1 className='tagline'>Where Beginnings Transform Into Legacies</h1>
       </div>
       <div  ref={homeEventDetailsRef}>
         <EventDetails />

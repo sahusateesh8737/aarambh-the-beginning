@@ -1,4 +1,5 @@
 import './App.css'
+import { Analytics } from '@vercel/analytics/react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Navbar from './components/Navbar' // Add this import statement
 import Home from './components/Home' // Assuming you have a Home component
@@ -42,6 +43,7 @@ function App() {
   return (
   <div>
       <RouterProvider router={router}/>
+      <Analytics />
     </div>
   )
 }

@@ -74,15 +74,7 @@ const EventDetails = () => {
         </div>
       </div>
 
-      {/* <motion.div 
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.6, duration: 0.6 }}
-        className="event-description"
-      >
-        <h2>About the Event</h2>
-        <p>{eventDetails.description}</p>
-      </motion.div> */}
+    
     </motion.div>
   );
 };

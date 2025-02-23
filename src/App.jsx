@@ -20,19 +20,29 @@ const router = createBrowserRouter(
     element: <div>
     <Navbar/>
     <About/>
+    <br></br>
+    <Footer/>
   </div>
   },
   {path:"/team",
-    element: <div>
-    <Navbar/>
-    <Team/>
-    <Footer/>
-  </div>
+    _element: <div>
+      <Navbar />
+      <Team />
+      <Footer />
+      <br/>
+    </div>,
+    get element() {
+      return this._element;
+    },
+    set element(value) {
+      this._element = value;
+    },
   },
   {path:"/event",
     element: <div>
     <Navbar/>
     <Event/>
+    <br/>
     <Footer/>
   </div>
   },

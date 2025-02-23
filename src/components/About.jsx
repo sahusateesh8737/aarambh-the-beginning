@@ -47,7 +47,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="about-hero-content"
         >
-          <h1>Transforming Ideas into Reality</h1>
+          <h1>Where Beginnings Transform Into Legacies</h1>
           <p>We are a passionate team dedicated to creating innovative solutions that make a difference.</p>
         </motion.div>
       </section>

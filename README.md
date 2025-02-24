@@ -6,5 +6,14 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-navbar change karna hai
-gallery section
+
+#instruction for localhost
+#Clone the repository
+https://github.com/sahusateesh8737/aarambh-the-beginning.git
+#now run
+npm install -g vite
+npm install vite --save-dev
+
+#for localhost
+npm run dev
+

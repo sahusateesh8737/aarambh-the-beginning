@@ -11,9 +11,9 @@ Currently, two official plugins are available:
 #Clone the repository
 https://github.com/sahusateesh8737/aarambh-the-beginning.git
 #now run
-npm install -g vite
-npm install vite --save-dev
+#npm install -g vite
+#npm install vite --save-dev
 
 #for localhost
-npm run dev
+#npm run dev
 

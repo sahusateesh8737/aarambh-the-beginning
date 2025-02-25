@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './Team.css';
 import { motion, AnimatePresence } from 'framer-motion';
-
+import EventBannerImage from '../assets/images/meeting.jpeg';
 const teamMembers = [
   {
     id: 1,
     name: 'Elena Rodriguez',
     role: 'Creative Director',
-    image: '/images/elena.webp',
+    image: EventBannerImage,
     description: 'Visionary design leader transforming ideas into stunning visual experiences.',
     expertise: ['UX/UI Design', 'Brand Strategy', 'Creative Innovation'],
     socials: {
@@ -20,7 +20,7 @@ const teamMembers = [
     id: 2,
     name: 'Kai Chen',
     role: 'Technology Architect',
-    image: '/images/kai.webp',
+    image: EventBannerImage,
     description: 'Tech innovator bridging cutting-edge technology with strategic solutions.',
     expertise: ['AI/ML', 'Cloud Infrastructure', 'Product Engineering'],
     socials: {
@@ -33,7 +33,7 @@ const teamMembers = [
     id: 3,
     name: 'Marcus Thompson',
     role: 'Growth Strategist',
-    image: '/images/marcus.webp',
+    image: EventBannerImage,
     description: 'Strategic thinker driving business growth and digital transformation.',
     expertise: ['Business Development', 'Market Strategy', 'Entrepreneurship'],
     socials: {

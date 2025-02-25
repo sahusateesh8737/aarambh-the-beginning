@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import './About.css';
 
 // Import images
-import FounderImage from '../assets/images/jane.jpg';
-import MissionImage from '../assets/images/jane.jpg';
-import VisionImage from '../assets/images/jane.jpg';
+import FounderImage from '../assets/images/meeting2.jpeg';
+import MissionImage from '../assets/images/meeting2.jpeg';
+import VisionImage from '../assets/images/meeting.jpeg';
 
 const About = () => {
   const companyValues = [

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './EventDetails.css';
-import EventBannerImage from '../assets/images/jane.jpg';
+import EventBannerImage from '../assets/images/meeting.jpeg';
 
 const EventDetails = () => {
   const eventDetails = {

@@ -1,0 +1,180 @@
+{
+  "teamMembers": [
+    {
+      "id": 1,
+      "name": "Rashi Sanger",
+      "role": "Founder & CEO",
+      "bio": "Jane is a visionary leader with over 15 years of experience in technology and innovation. She founded Aarambh with a mission to create transformative solutions.",
+      "photo": "/images/team/rashi.jpg",
+      "socialLinks": {
+        "linkedin": "https://linkedin.com/in/janedoe"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Divyansh Singh",
+      "role": "Co-CEO",
+      "bio": "John is an experienced technologist with a background in AI and machine learning. He leads our technical team in developing cutting-edge solutions.",
+      "photo": "/images/team/divyansh.jpg",
+      "socialLinks": {
+        "linkedin": "https://linkedin.com/in/johnsmith"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Nitish Kumar Singh",
+      "role": "COO",
+      "bio": "Sarah brings creative vision and user-centric design principles to our team. She ensures our products are both beautiful and functional.",
+      "photo": "/images/team/nitish.jpg",
+      "socialLinks": {
+        "linkedin": "https://linkedin.com/in/sarahjohnson"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Satish Sahu",
+      "role": "Technical Lead",
+      "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+      "photo": "/images/team/satish.jpg",
+      "socialLinks": {
+        "linkedin": "https://linkedin.com/in/michaelbrown"
+      }
+    },{
+        "id": 5,
+        "name": "Ajit",
+        "role": "Technical",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/ajit.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+        }
+      },{
+        "id": 6,
+        "name": "Aditya Raj",
+        "role": "Event & Marketing Head",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/aditya.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+        }
+      },{
+        "id": 7,
+        "name": "Chiranjeev Kumar Jha",
+        "role": "Event & Marketing",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/chiranjeev.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+        }
+      },{
+        "id": 8,
+        "name": "Mukul Yadav",
+        "role": "Event & Marketing",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/mukul.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+        }
+      },{
+        "id": 9,
+        "name": "Aditya Raj",
+        "role": "Event & Marketing",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/aditya.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+        }
+      },{
+        "id": 10,
+        "name": "Dev Jakhar",
+        "role": "Event & Marketing",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/dev.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+        }
+      },{
+        "id": 11,
+        "name": "Avinash Verma",
+        "role": "Graphic Designer",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/avinash.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+        }
+      },{
+        "id": 12,
+        "name": "Shalini",
+        "role": "Graphic Designer",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/shalini.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+        }
+      },{
+        "id": 13,
+        "name": "Chirag",
+        "role": "Content Writer",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/chirag.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+        }
+      },{
+        "id": 14,
+        "name": "Payal",
+        "role": "Social Media",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/payal.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+        }
+      },{
+        "id": 15,
+        "name": "Khushi ",
+        "role": "Event Management",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/Khushi.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+        }
+      },{
+        "id": 16,
+        "name": "Arjun Raj",
+        "role": "Media(Photography & Videography)",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/ArjunRaj.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+        }
+      },{
+        "id": 17,
+        "name": "Sorabh Sharma",
+        "role": "Student Cordinator",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/Shorabh.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+         
+        }
+      },{
+        "id": 18,
+        "name": "Ritesh Kumar",
+        "role": "Student Cordinator and Marketing",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/ritesh.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+        }
+      },{
+        "id": 19,
+        "name": "Khushi Kumari",
+        "role": "Student Cordinator and Marketing",
+        "bio": "Michael is a full-stack developer with expertise in React and Node.js. He leads our development team to create robust and scalable applications.",
+        "photo": "/images/team/khushikumari.jpg",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaelbrown"
+        }
+      }
+  ]
+}

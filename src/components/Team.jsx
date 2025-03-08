@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import teamMembersData from '../data/teamMembers.json';
+import UserForm from './UserForm';
 import './Team.css';
 
 // Import team member images
@@ -19,6 +20,7 @@ const photoMap = {
 
 const Team = () => {
   const { teamMembers } = teamMembersData;
+  const [showForm, setShowForm] = useState(false);
   
   console.log("Team members data:", teamMembers);
 
@@ -87,15 +89,26 @@ const Team = () => {
         >
           <h2>Join Our Team</h2>
           <p>We're always looking for talented individuals to join our team. Check out our current openings.</p>
-          <motion.a
-            href="/careers"
+          <motion.button
+            onClick={() => setShowForm(!showForm)}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="join-button"
           >
-            View Open Positions
-          </motion.a>
+            {showForm ? 'Close Form' : 'Apply Now'}
+          </motion.button>
         </motion.div>
+
+        {showForm && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.5 }}
+          >
+            <UserForm />
+          </motion.div>
+        )}
       </section>
     </motion.div>
   );

@@ -16,12 +16,15 @@ const Footer = () => {
         </div>
         <div className="footer-section reach-us">
           <h4>Reach Us</h4>
-          <p>123 Main Street, Anytown, USA</p>
-          <p>Email: info@organization.com</p>
-          <p>Phone: (123) 456-7890</p>
+          <p>Arambh LPU,</p>
+          <p>Block 13, Division of student welfare,</p>
+          <p>Lovely Professional University,</p>
+          <p>Kapurthala, Pin 144402, Punjab</p>
         </div>
         <div className="footer-section contact-us">
           <h4>Contact Us</h4>
+          <p>✉️ arambh.orgz01@gmail.com</p>
+          <p>📞6307170446</p>
           <div className="social-icons">
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin"></i>
@@ -36,7 +39,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2025 Your Organization. All rights reserved.</p>
+        <p>&copy; 2025 Arambh. All rights reserved.</p>
       </div>
     </footer>
   );

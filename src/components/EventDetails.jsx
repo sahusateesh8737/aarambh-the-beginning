@@ -5,11 +5,11 @@ import EventBannerImage from '../assets/images/meeting.jpeg';
 
 const EventDetails = () => {
   const eventDetails = {
-    name: 'Tech Innovation Summit 2025',
-    date: 'March 15-17, 2025',
-    time: '9:00 AM - 6:00 PM',
-    venue: 'Silicon Valley Convention Center',
-    description: 'Explore the cutting-edge technologies shaping our future.',
+    name: 'ANIME EVE',
+    date: 'March 22, 2025',
+    time: '2:00 PM Onwards',
+    venue: '34-413',
+    description: 'Experience the thrill of the big screen! We are hosting a movie event showing YOUR NAME. Come and immerse yourself in the story, the sound, and the shared excitement of a cinematic experience. We look forward to seeing you there.',
     registrationLink: 'https://techinnovationsummit.com/register'
   };
 

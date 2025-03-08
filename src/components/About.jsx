@@ -27,10 +27,10 @@ const About = () => {
   ];
 
   const milestones = [
-    { year: 2018, event: 'Company Founded' },
-    { year: 2020, event: 'First Major Product Launch' },
-    { year: 2022, event: 'Expanded to International Markets' },
-    { year: 2024, event: 'Innovation Leadership Award' }
+    { year: 0, event: 'Organized Events' },
+    // { year: 2020, event: 'First Major Product Launch' },
+    // { year: 2022, event: 'Expanded to International Markets' },
+    // { year: 2024, event: 'Innovation Leadership Award' }
   ];
 
   return (
@@ -61,8 +61,8 @@ const About = () => {
             className="story-text"
           >
             <h2>Our Journey</h2>
-            <p>Founded with a vision to revolutionize technology, our company has grown from a small startup to a global innovator. We believe in the power of creativity, collaboration, and continuous learning.</p>
-            <img src={FounderImage} alt="Company Founder" className="founder-image" />
+            <p>Arambh is an organization focused on initiating positive change. We develop and implement programs that empower individuals and strengthen our community. We are dedicated to creating opportunities and driving progress.</p>
+            {/* <img src={FounderImage} alt="Company Founder" className="founder-image" /> */}
           </motion.div>
         </div>
       </section>

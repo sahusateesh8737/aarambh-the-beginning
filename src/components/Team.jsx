@@ -48,7 +48,7 @@ const Team = () => {
               key={member.id}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 2 }}
+              transition={{ duration: 0.8 }}
               whileHover={{ y: -10 }}
               className="team-member-card"
             >

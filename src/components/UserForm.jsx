@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './UserForm.css';
 
+const API_URL = import.meta.env.PROD 
+  ? 'https://your-vercel-deployment-url.vercel.app/api'
+  : 'http://localhost:5001/api';
+
 const UserForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -30,7 +34,7 @@ const UserForm = () => {
     setMessage('');
 
     try {
-      const response = await fetch('http://localhost:5001/api/users', { // Updated port number
+      const response = await fetch(`${API_URL}/users`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,22 +44,23 @@ const UserForm = () => {
 
       const data = await response.json();
 
-      if (response.ok) {
-        setMessage('Registration successful!');
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          regNumber: '',
-          section: '',
-          position: '',
-          skills: ''
-        });
-      } else {
-        setMessage(data.message || 'Something went wrong. Please try again.');
+      if (!response.ok) {
+        throw new Error(data.message || 'Something went wrong');
       }
+
+      setMessage('Registration successful!');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        regNumber: '',
+        section: '',
+        position: '',
+        skills: ''
+      });
     } catch (error) {
-      setMessage('Error submitting form. Please try again.');
+      console.error('Submission error:', error);
+      setMessage(error.message || 'Error submitting form. Please try again.');
     } finally {
       setSubmitting(false);
     }

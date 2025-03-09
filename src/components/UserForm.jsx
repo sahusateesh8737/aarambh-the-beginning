@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import './UserForm.css';
 
 const API_URL = import.meta.env.PROD 
-  ? 'https://your-vercel-deployment-url.vercel.app/api'
+  ? 'https://aarambh-satish-sahus-projects.vercel.app/api'
   : 'http://localhost:5001/api';
 
 const UserForm = () => {
@@ -39,6 +39,7 @@ const UserForm = () => {
         headers: {
           'Content-Type': 'application/json',
         },
+        credentials: 'include',
         body: JSON.stringify(formData)
       });
 

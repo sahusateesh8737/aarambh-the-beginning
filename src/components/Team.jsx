@@ -12,10 +12,10 @@ import satishImage from '../assets/images/team/satish.jpg';
 
 // Create a mapping of photo paths to imported images
 const photoMap = {
-  '/images/team/rashi.jpg': rashiImage,
-  '/images/team/divyansh.jpg': divyanshImage,
-  '/images/team/nitish.jpg': nitishImage,
-  '/images/team/satish.jpg': satishImage
+  '/images/team/rashi.jpg': '/assets/rashi.jpg',
+  '/images/team/divyansh.jpg': '/assets/divyansh.jpg',
+  '/images/team/nitish.jpg': '/assets/nitish.jpg',
+  '/images/team/satish.jpg': '/assets/satish.jpg'
 };
 
 const Team = () => {

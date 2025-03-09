@@ -2,8 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/*.js",
+      "src": "server/index.js",
       "use": "@vercel/node"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "server/index.js"
     }
   ],
   "headers": [
@@ -16,11 +22,7 @@
       ]
     }
   ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1",
-      "methods": ["GET", "POST", "PUT, DELETE, OPTIONS"]
-    }
-  ]
+  "env": {
+    "MONGODB_URI": "@mongodb_uri"
+  }
 }

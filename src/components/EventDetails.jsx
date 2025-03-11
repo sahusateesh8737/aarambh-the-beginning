@@ -1,16 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './EventDetails.css';
-import EventBannerImage from '../assets/images/meeting.jpeg';
+import EventBannerImage from '../assets/images/comingSoon.png';
 
 const EventDetails = () => {
   const eventDetails = {
-    name: 'ANIME EVE',
-    date: 'March 22, 2025',
-    time: '2:00 PM Onwards',
-    venue: '34-413',
-    description: 'Experience the thrill of the big screen! We are hosting a movie event showing YOUR NAME. Come and immerse yourself in the story, the sound, and the shared excitement of a cinematic experience. We look forward to seeing you there.',
-    registrationLink: 'https://techinnovationsummit.com/register'
+    // name: 'ANIME EVE',
+    // date: 'March 22, 2025',
+    // time: '2:00 PM Onwards',
+    // venue: '34-413',
+    // description: 'Experience the thrill of the big screen! We are hosting a movie event showing YOUR NAME. Come and immerse yourself in the story, the sound, and the shared excitement of a cinematic experience. We look forward to seeing you there.',
+    // registrationLink: 'https://techinnovationsummit.com/register'
   };
 
   return (
@@ -60,7 +60,7 @@ const EventDetails = () => {
                 <span>{eventDetails.venue}</span>
               </div>
             </div>
-            <motion.a 
+            {/* <motion.a 
               href={eventDetails.registrationLink}
               target="_blank"
               rel="noopener noreferrer"
@@ -69,7 +69,7 @@ const EventDetails = () => {
               whileTap={{ scale: 0.95 }}
             >
               Register Now
-            </motion.a>
+            </motion.a> */}
           </motion.div>
         </div>
       </div>

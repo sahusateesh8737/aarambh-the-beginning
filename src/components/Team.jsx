@@ -54,25 +54,26 @@ const Team = () => {
               whileHover={{ y: -10 }}
               className="team-member-card"
             >
-              <div className="member-image">
-                {/* Use the photoMap to get the correct imported image */}
-                <img src={photoMap[member.photo]} alt={member.name} />
-              </div>
-              <div className="member-details">
-                <h3>{member.name}</h3>
-                <h4>{member.role}</h4>
-                <div className="social-links">
-                  {Object.entries(member.socialLinks).map(([platform, link]) => (
-                    <a
-                      key={platform}
-                      href={link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`${member.name}'s ${platform}`}
-                    >
-                      <i className={`fab fa-${platform}`}></i>
-                    </a>
-                  ))}
+              <div className="member-inner">
+                <div className="member-image">
+                  <img src={photoMap[member.photo]} alt={member.name} />
+                </div>
+                <div className="member-details">
+                  <h3>{member.name}</h3>
+                  <h4>{member.role}</h4>
+                  <div className="social-links">
+                    {Object.entries(member.socialLinks).map(([platform, link]) => (
+                      <a
+                        key={platform}
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${member.name}'s ${platform}`}
+                      >
+                        <i className={`fab fa-${platform}`}></i>
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
             </motion.div>

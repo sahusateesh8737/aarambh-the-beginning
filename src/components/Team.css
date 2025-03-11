@@ -30,11 +30,18 @@
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 40px;
+  justify-items: center;
 }
 
 .team-member-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  perspective: 1500px;
+  margin: 20px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   overflow: hidden;
@@ -48,42 +55,63 @@
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
-.member-image {
+.member-inner {
+  position: relative;
   width: 100%;
-  height: 350px;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.team-member-card:hover .member-inner {
+  transform: rotateY(180deg);
+}
+
+.member-image,
+.member-details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.member-image {
   overflow: hidden;
-  position: relative; /* Add position relative */
 }
 
 .member-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
-  position: absolute; /* Position absolute */
-  top: 0;
-  left: 0;
-}
-
-.team-member-card:hover .member-image img {
-  transform: scale(1.1);
 }
 
 .member-details {
-  padding: 1.5rem;
-  flex: 1; /* Make this section take remaining space */
+  transform: rotateY(180deg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
 }
 
 .member-details h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: orange;
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .member-details h4 {
-  font-size: 1rem;
-  color: #e0e0e0;
-  margin-bottom: 1rem;
+  color: #e07e06;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .member-details p {
@@ -94,11 +122,16 @@
 }
 
 .social-links {
+  margin-top: 20px;
   display: flex;
   gap: 1rem;
 }
 
 .social-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: transform 0.3s, color 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,12 +139,12 @@
   height: 40px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  color: rgb(224, 37, 37);
-  font-size: 1.2rem;
   transition: all 0.3s ease;
 }
 
 .social-links a:hover {
+  color: #e07e06;
+  transform: scale(1.2);
   background: orange;
   transform: translateY(-5px);
 }

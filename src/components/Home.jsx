@@ -2,12 +2,14 @@ import React, { useEffect, useRef } from 'react';
 import './Home.css';
 import LOGO from '../assets/images/logo2.png'; // Ensure the path is correct
 import EventDetails from './EventDetails';
+import UserForm from './UserForm';
 
 const Home = () => {
   const homeContentRef = useRef(null);
   const homeLogoRef = useRef(null);
   const homeEventDetailsRef = useRef(null);
   const aboutUsRef = useRef(null);
+  const joinSectionRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -33,6 +35,9 @@ const Home = () => {
     if (aboutUsRef.current) {
       observer.observe(aboutUsRef.current);
     }
+    if (joinSectionRef.current) {
+      observer.observe(joinSectionRef.current);
+    }
 
     return () => {
       if (homeContentRef.current) {
@@ -46,6 +51,9 @@ const Home = () => {
       }
       if (aboutUsRef.current) {
         observer.unobserve(aboutUsRef.current);
+      }
+      if (joinSectionRef.current) {
+        observer.unobserve(joinSectionRef.current);
       }
     };
   }, []);
@@ -73,6 +81,15 @@ const Home = () => {
           Our organization is committed to excellence and innovation. We strive to provide the best services to our clients and make a positive impact in the community. Our team of dedicated professionals works tirelessly to achieve our mission and vision.
         </p>
       </div>
+
+      <div className="join-section" ref={joinSectionRef}>
+        <h2 className="section-title">Join Our Community</h2>
+        <p className="section-description">
+          Be part of our growing community and stay updated with our latest events and opportunities.
+        </p>
+        <UserForm />
+      </div>
+      
     </div>
   );
 };

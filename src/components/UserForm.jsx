@@ -136,16 +136,21 @@ const UserForm = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="position">Position Applied For</label>
-          <input
-            type="text"
-            id="position"
-            name="position"
-            value={formData.position}
-            onChange={handleInputChange}
-            required
-          />
-        </div>
+  <label htmlFor="position">Position Applied For</label>
+  <select
+    id="position"
+    name="position"
+    value={formData.position}
+    onChange={handleInputChange}
+    required
+  >
+    <option value="">Select a position</option>
+    <option value="graphic">Graphic</option>
+    <option value="social_media">Social Media</option>
+    <option value="marketing">Marketing</option>
+    <option value="technical">Technical</option>
+  </select>
+</div>
 
         <div className="form-group">
           <label htmlFor="skills">Skills</label>

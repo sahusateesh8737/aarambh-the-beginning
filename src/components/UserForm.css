@@ -85,3 +85,12 @@
     padding: 1rem;
   }
 }
+
+.form-group select {
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1rem;
+}
